@@ -1,0 +1,35 @@
+{
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
+	"tailwindCSS.includeLanguages": {
+		"html": "html",
+		"javascript": "javascript",
+		"typescript": "typescript",
+		"javascriptreact": "javascriptreact",
+		"typescriptreact": "typescriptreact"
+	},
+	"tailwindCSS.experimental.classRegex": [
+		"tw`([^`]*)",
+		"tw=\"([^\"]*)",
+		"tw={\"([^\"}]*)",
+		"tw\\.\\w+`([^`]*)",
+		"tw\\(.*?\\)`([^`]*)"
+	],
+	"editor.snippetSuggestions": "top",
+	"editor.tabCompletion": "on",
+	"editor.quickSuggestions": {
+		"strings": true,
+		"comments": false,
+		"other": true
+	},
+	"editor.suggest.snippetsPreventQuickSuggestions": false,
+	"editor.wordBasedSuggestions": "matchingDocuments",
+	"typescript.suggest.includeAutomaticOptionalChainCompletions": true
+}

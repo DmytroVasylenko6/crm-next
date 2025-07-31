@@ -1,0 +1,60 @@
+{
+  // Place your snippets for typescriptreact here. Each snippet is defined under a snippet name and has a prefix, body and 
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+  // same ids are connected.
+  "React Functional Component with TypeScript": {
+    "prefix": "rsft",
+    "body": [
+      "import React from 'react';",
+      "",
+      "export interface ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/g}Props {$1}",
+      "",
+      "export default function ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/g}({$2}: ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/g}Props) {",
+      "  return <div>$0</div>;",
+      "}"
+    ],
+    "description": "React functional component with TypeScript interface and React import"
+  },
+  "React Functional Component with Props": {
+    "prefix": "rsftp",
+    "body": [
+      "import React from 'react';",
+      "",
+      "export interface ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/g}Props {",
+      "  $1",
+      "}",
+      "",
+      "export default function ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/g}({ $2 }: ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/g}Props) {",
+      "  return <div>$0</div>;",
+      "}"
+    ],
+    "description": "React functional component with TypeScript interface and props"
+  },
+  "Simple React Component": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "export default function ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/g}() {",
+      "  return <div>$0</div>;",
+      "}"
+    ],
+    "description": "Simple React functional component with React import"
+  },
+  "React Component with useState": {
+    "prefix": "rfcs",
+    "body": [
+      "import React, { useState } from 'react';",
+      "",
+      "export interface ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/g}Props {$1}",
+      "",
+      "export default function ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/g}({$2}: ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/g}Props) {",
+      "  const [$3, set${3/(.*)/${3:/capitalize}/}] = useState$4('$5');",
+      "",
+      "  return <div>$0</div>;",
+      "}"
+    ],
+    "description": "React functional component with useState hook"
+  }
+}

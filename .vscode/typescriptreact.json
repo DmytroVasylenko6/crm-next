@@ -1,0 +1,52 @@
+{
+  "React Functional Component with TypeScript": {
+    "prefix": "rsft",
+    "body": [
+      "interface ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/g}Props {",
+      "  ${1:// Define your props here}",
+      "}",
+      "",
+      "export default function ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/g}({ ${2:props} }: ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/g}Props) {",
+      "  return (",
+      "    <div>",
+      "      ${0:// Your component content}",
+      "    </div>",
+      "  )",
+      "}"
+    ],
+    "description": "React functional component with TypeScript interface (auto filename)",
+    "scope": "typescriptreact"
+  },
+  "React Functional Component with TypeScript (named export)": {
+    "prefix": "rsftn",
+    "body": [
+      "interface ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/g}Props {",
+      "  ${1:// Define your props here}",
+      "}",
+      "",
+      "export function ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/g}({ ${2:props} }: ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/g}Props) {",
+      "  return (",
+      "    <div>",
+      "      ${0:// Your component content}",
+      "    </div>",
+      "  )",
+      "}"
+    ],
+    "description": "React functional component with TypeScript interface (named export, auto filename)",
+    "scope": "typescriptreact"
+  },
+  "Simple React Component": {
+    "prefix": "rfc",
+    "body": [
+      "export default function ${TM_FILENAME_BASE/^(.*)$/${1:/pascalcase}/g}() {",
+      "  return (",
+      "    <div>",
+      "      ${0:// Your component content}",
+      "    </div>",
+      "  )",
+      "}"
+    ],
+    "description": "Simple React functional component (auto filename)",
+    "scope": "typescriptreact"
+  }
+}
