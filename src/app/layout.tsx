@@ -13,7 +13,6 @@ export default function RootLayout({
   console.log('RootLayout');
   console.log(children);
   console.log('RootLayout end');
-  const aaa
   return (
     <html lang="en">
       <body className={font.className}>
