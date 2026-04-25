@@ -10,6 +10,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  console.log('RootLayout');
+  console.log(children);
+  console.log('RootLayout end');
   return (
     <html lang="en">
       <body className={font.className}>
