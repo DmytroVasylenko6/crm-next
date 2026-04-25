@@ -8,7 +8,7 @@ export interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   console.log('Layout');
   console.log(children);
-  console.log('Layout end');
+Remove the line or replace with a valid statement.
   aaad
   return (
     <>
