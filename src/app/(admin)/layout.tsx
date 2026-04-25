@@ -9,6 +9,7 @@ export default function Layout({ children }: LayoutProps) {
   console.log('Layout');
   console.log(children);
   console.log('Layout end');
+  aaad
   return (
     <>
       <Sidebar />
