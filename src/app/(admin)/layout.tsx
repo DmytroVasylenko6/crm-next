@@ -7,6 +7,8 @@ export interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   console.log('Layout');
+  console.log(children);
+  console.log('Layout end');
   return (
     <>
       <Sidebar />
