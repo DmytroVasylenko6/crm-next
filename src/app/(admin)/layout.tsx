@@ -8,7 +8,6 @@ export interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   console.log('Layout');
   console.log(children);
-  aaad
   return (
     <>
       <Sidebar />
